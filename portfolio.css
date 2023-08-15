@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 80px;
+    align-items: center;
+}
+
+.logo{
+    width: 130px;
+}
+.items{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.link{
+    color: black;
+   /*  to delete underline of a link tag output */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* pseudo class */
+.link:hover{
+    color: brown;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#steel{
+    color: rgb(213, 206, 75);
+    font-size: 50px;
+}
+.download{
+    text-decoration: none;
+    background-color: black;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.images img {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 18% 10% 0px 8%;
+}
+.about-image{
+    margin-left:-20px;
+   
+}
+.heading{
+    text-align: center;
+}
+ 
+/* descendant selector */
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size:20px ;
+    color: rgb(33, 161, 33);
+}
+
+.about-content{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.about-image img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about-details {
+  font-size: 19px;
+  font-weight: 400;
+  text-align: justify;
+}
+.information{
+    margin-top: 1rem;
+}
+.info-box{
+    margin-bottom: 1rem;
+}
+.info-box span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-content img{
+    width: 100%;
+    border-radius: 1rem;
+}
+html{
+    scroll-behavior: smooth; /* to scroll down smoothly */
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem 0px;
+    position: relative;
+    
+}
+.bar-container h3,span{
+    font-size:1.2rem ;
+    font-weight: 400;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    background-color: rgb(181, 181, 12);
+    width: 88%;
+}
+.css-bar{
+    background-color: rgb(181, 181, 12);
+    width: 95%;
+}
+.react-bar{
+    background-color: rgb(181, 181, 12);
+    width: 89%;
+}
+.js-bar{
+    background-color: rgb(181, 181, 12);
+    width: 85%;
+}
+.icon-set{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon, .up-arrow{
+   width: 50px;
+   height: 50px;
+   /* border: 1px solid black; */
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 10px;
+
+}
+.icon i{
+    font-size: 25px;
+    color: black;
+}
+/* pseudo class */
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(242, 242, 93),rgb(218, 121, 11));
+    
+}
+.icon:hover i{      /*  to change color when we hover the icon */
+    color: rgb(222, 13, 13);
+    animation: shake 1s infinite;  /*  to make the icon animate when hover it */
+}
+@keyframes shake{
+    10%{
+        transform: rotate(25deg);
+    }
+    20%{
+        transform: rotate(-25deg);
+    }
+    30%{
+        transform: rotate(25deg);
+    }
+    40%{
+        transform: rotate(-25deg);
+    }
+}
+
+.footer{
+    margin: 3rem 0px;
+}
+
+.lastsentence{
+    text-align: center;
+}
+.up-arrow{
+    margin:0px 10px 50px 0px ;
+    /* width: 50px;
+    height: 50px; */
+    /* border: 1px solid rgb(245, 145, 64); */
+    /* border-radius: 50%;
+    background-color: orange; */
+    background-image: linear-gradient(to bottom left,rgb(200, 132, 5),rgb(171, 171, 11));
+    float: right;   /* to place the div to right */
+    margin-top: 20px;
+}
+
+.up-arrow:hover i{
+    color: aquamarine;
+}
